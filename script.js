@@ -3,7 +3,7 @@ const result = document.querySelector('.result');
 
 const getWordInformation = async (word) => {
   try {
-    result.innerHTML = "Fetching data...,"
+    result.innerHTML = "Fetching data...."
   const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
 
   const data = await response.json();
